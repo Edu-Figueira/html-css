@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 10px solid black; /*Mesmo que estejamos especificando que queremos a borda tirada do aquivo de imagem ("border-image:..."), não podemos retirar esta declaração, pois é ela que dá a base para segurar a margem personalizada. | Podemos colocar o parâmetro "transparent" também, para caso dw o navegador não seja compatível com a borda personalizada do arquivo png; ou podemos simplesmente colocar na cor predominante da do aquivo, ao invés de simplesmente "black".*/
+            padding: 10PX;
+            border-image-source: url('borda.png');
+            border-image-slice: 39;
+            border-image-repeat: stretch;
+
+            border-image: url('borda.png') 39 stretch; /*shorthand resumindo as três últimas declarações de cima*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

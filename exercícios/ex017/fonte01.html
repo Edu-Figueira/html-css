@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, serif; /*é preciso atentar aqui, pois alguns tipos de celular, tablet e TV podem não possuir a fonte, por isso é importante colocar do jeito que o VS Code sugere e está aqui, com mais de uma programada para tentar abrir (courier new, corier, ou monospace. Isso é chamado combinação segura ("css web safe fonts combinations", no w3schools).*/
+            font-size: 16px;
+            /*↑ Medidas Absolutas:
+            - cm, 
+            - mm,
+            - in (polegada, 1in = 2,54cm ),
+            - px (1px geralmente é = 1em),
+            - pt (ponto, é aquele tamanho de letra que configuramos no word), e
+            - pc (paica)
+            problema: Os diferentes tamanhos e definições de telas existentes hoje criam a possibilidade de navegadores eventualmente não conseguirem alcançar uma medida absoluta, a apresentação muda. Ponto e Paica são medidas tipográficas não recomendadas para impressão em tela.
+            Medidas Relativas (ao tamanho natural):
+            - em (referemte ao corpo da fonte que está sendo usada, especifacamente o seu "M" maiúsculo),
+            - ex (relativo à altura-x de uma fonte),
+            - rem (semelhante ao "em", mas relativo ao "root", fonte configurada no "body" ou no seletor global (*)),
+            - vw ("view width", largura da viewport, que é o tamanho da tela do usuário, em porcentagem),
+            - hv (altura da viewport)
+            Vamos trbalhar com o em, que é, assim como o px, recomendada pela W3C.*/
+            font-weight: normal; /*lighter, normal, bold e bolder, podemos especificar numericamente, de 100 a 900*/
+            font-style: italic; /*basicamente negrito e itálico, para além da grossura nativa dos glifos*/
+            text-decoration: underline;
+            /*Essas três primeiras configurações de fontes nós fazemos demais. Mas, lembrando, nem todas as fontes têm essas variações todas!*/
+            /*shorthand font, necessariamente NESTA ORDEM, para configurar tudo numa declação só: 
+            - font-style -> font-weight -> font-size -> font-family. Veja↓*/
+            font: italic bolder 1em 'Work Sans', sans-serif /*Obs: não existe shorthand para tudo. Nós também não precisamos colocar todos esses quatro parâmetros, apenas aquele que vamos usar mesmo. Veja↓*/            
+        }
+
+        h2 {
+            font: 1em "work sans", sans-serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolore nesciunt quia veniam minus accusamus sequi quis nisi fugiat iure a nemo aspernatur, sint, quaerat dolor suscipit aliquam. Tempore, non!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, neque. Perferendis autem fugit tempora assumenda, sit repellendus voluptatum quidem alias, possimus fugiat eius commodi hic vero dolor dicta recusandae rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam explicabo quod a soluta rerum itaque unde numquam necessitatibus neque omnis et, eveniet qui, voluptatem consectetur voluptate dolorem laboriosam illum perspiciatis!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eligendi voluptas iste aliquam, obcaecati voluptatum veritatis natus quos aut atque ipsa voluptates autem fugiat suscipit tempore labore sunt earum explicabo!</p>
+</body>
+</html>

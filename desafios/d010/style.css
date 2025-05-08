@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url(./pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+}
+
+body {
+    margin: auto;
+    background-color: #84E1AD;
+}
+
+header {    
+    background-image: linear-gradient(to top, #1A5C38, #3CD782);
+    color: white;
+    padding: 10px;
+    
+}
+header > h1 {
+    font: 'idroid', times, serif;    
+    text-align: center;
+}
+header > p {
+    text-align: center;
+}
+header > nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+header > nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    margin: 0px 20px 0px 20px;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+}
+
+h2 {
+    color: #1A5C38;
+    font-family: 'idroid', times, serif;
+    text-align: left;
+}
+
+h3 {
+    background-image: linear-gradient(to right, #84E1AD, white);
+    font-family: 'idroid', times, serif;
+    text-align: left;
+    padding: 2px 2px;
+}
+
+#secao2 > h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+
+
+verde mais escuro: #1A5C38
+verde de fundo: #84E1AD
+degradê do header: #1A5C38 para #3CD782
+verde do h3 da segunda section: #2FA866

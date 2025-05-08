@@ -1,0 +1,32 @@
+@charset "ITF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px hsla(22, 19%, 45%, 0.616); /*é a mesma cor #F2C3A7, só que trabalhada em monocromia (arrastando para baixo o cursor na paleta da cor que aparece aqui para editarmos*/
+    width: 600px;
+    padding: 10px; /*"acolchoamento", aquela margenzinha que impede de o texto encostar na borda do quadrado em que está dentro*/
+    margin: auto;
+}
+
+h1 {
+    color: #F39209;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(129, 77, 5, 0.726); /*esses valores se referrem a descolamento lateral, deslocamento para baixo e espalhamento, respectivamente*/
+}
+
+h2 {
+    color: #125189;
+}
+
+p {
+    text-align: justify;
+}

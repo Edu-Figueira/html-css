@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+    "id" em html = "#" em css (só pode um elemento)
+    "calss" em html = "." em css (pode vários elementos)
+*/
+
+body {
+    background-color: rgb(127, 255, 180);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(42, 113, 24);    
+}
+#principal {
+    text-align: center;
+    background-color: rgb(178, 210, 178);
+}
+h2 {
+    color: rgb(82, 151, 128);
+}
+.basico {
+    color: rgb(5, 171, 5);
+
+}
+.intermediario {
+    color: rgb(167, 167, 8);
+
+}
+.avancado {
+    color: rgb(162, 16, 16);
+
+}
+.destaque {
+    background-color: rgba(210, 210, 99, 0.721);
+}

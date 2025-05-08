@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*esses "min e max" abaixo substituem a responsividade automática e limitada de quando estabelecemos um valor apenas para "width"*/
+            min-width: 320px; /*tirando os mais modernos, costuma ser a largura dos celulares em pé*/
+            max-width: 800px;
+            margin: auto;            
+        }
+        img {
+            width: 100%; /*ao colocar 100%, a imagem reduz automaticamente para caber na caixa*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit laborum, maiores odio eum corrupti cumque sit minus rem nemo porro impedit, quo itaque dolorem facere unde veniam pariatur dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque cum totam voluptatum! Non adipisci esse ipsa quisquam quidem qui illo? Quae laborum ex officiis qui illum neque eaque ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus culpa, ab fuga odit libero excepturi nemo omnis esse nulla quia laboriosam laudantium itaque assumenda animi obcaecati porro quod? Ad.</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="pacote-projeto-d010/imagens/irina-blok-pq.jpg"> <!--Aqui o raciocínio é: até aquele X pixels de largura, use a foto x, para além disso, use a original, a que está na tag "img"-->>
+            <img src="pacote-projeto-d010/imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit laborum, maiores odio eum corrupti cumque sit minus rem nemo porro impedit, quo itaque dolorem facere unde veniam pariatur dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque cum totam voluptatum! Non adipisci esse ipsa quisquam quidem qui illo? Quae laborum ex officiis qui illum neque eaque ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus culpa, ab fuga odit libero excepturi nemo omnis esse nulla quia laboriosam laudantium itaque assumenda animi obcaecati porro quod? Ad.</p>
+    </main>
+</body>
+</html>
