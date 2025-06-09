@@ -11,7 +11,20 @@ html {
 }
 
 header {
-    background-color: rgb(148, 148, 148);    
+    background-color: rgb(148, 148, 148);  
+}
+
+header img {
+    width: 20px;
+    height: 20px;
+    padding-left: 49vw;
+    padding-right: 51vw;
+    padding-bottom: 3px;    
+}
+
+header > img:hover {
+    background-color: white;
+    cursor: pointer;
 }
 
 header h1 {
@@ -20,7 +33,7 @@ header h1 {
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu ul {

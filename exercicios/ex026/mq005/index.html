@@ -9,7 +9,8 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <img src="navigation-bar.png" alt="Menu de navegação" onclick="clickMenu()">
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,5 +30,14 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis nihil fugiat porro saepe amet maiores veniam ratione sequi ab fuga quis nesciunt expedita, minima odio error tempore repellendus vel!</p>
         </Article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
